@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Dogbook </title>
+    <script src="https://kit.fontawesome.com/e471c0b386.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/loginstyle.css">
+  </head>
+  <body onload="getLoginStatus();">
+    <div class="login">
+        <div class="login-header">
+          <h1><i class="fas fa-dog"></i>DogBook</h1>
+        </div>
+        <div class="login-form">
+          <h3>Username:</h3>
+          <input type="text" placeholder="Username" id="user"/><br>
+          <p id="textbox"></p>
+          <h3>Password:</h3>
+          <input type="password" placeholder="Password" id="pass" ng-change="analyze(password)"/>
+          <br>
+          <p id="textbox1"></p>
+          <input type="button" value="Login" class="login-button" id="create" onclick="check()">
+          <br>
+          <a href="signup.html" class="sign-up">Sign Up!</a>
+          <br>
+          <h6 class="no-access">Can't access your account?</h6>
+          <a href="index.html" class="back">Go back</a>
+        </div>
+        <a class="fb">SIGN IN WITH FACEBOOK <i class="fab fa-facebook-square"></i></a>
+      </div>
+      
+  </body>
+
+  <script src="js-login.js"></script>
+</html>

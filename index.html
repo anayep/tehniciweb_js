@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Dogbook </title>
+    <script src="https://kit.fontawesome.com/e471c0b386.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/general.css">
+
+  </head>
+
+  <body onload="myFunction();checklogin()">
+
+    <div class="navigatie">
+      <ul>
+        <li class="logo" style="float:left""><i class="fas fa-dog"></i>DogBook</li>
+        <li class="prima"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a class="meniu" href="post.html"><i class="fas fa-edit"></i>Add a new post</a></li>
+        <li onclick="getSignedOut();"><a href="login.html""><i class="fas fa-paw"></i>SIGN OUT</a></li>
+        <li class="dropdown" style="float:right"><a class="active" href="#about">NEW NOTIFICATIONS<div class="menu-box-number">24</div></a>
+          <ul class="dropdown-content">
+            <li><a href="like.html"><i class="fas fa-heart"></i> Milo, Archie and 78 other liked you photo</a></li>
+            <li><a href="like.html"><i class="fas fa-glasses"></i> Teddy left a comment on your photo</a></li>
+            <li><a href="#"><i class="fas fa-user-plus"></i> Friend Request from Bella</a></li>
+       
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  <div class="row">
+    <div class="col">
+        <div class="container">
+            <img src="public/imagini/dog-stock.jpg" class="avatar" height=150 alt="Avatar"> 
+            <hr>
+            <p class="box1">ACTIVE NOW<div class="activebutton"> a</div>
+            <div class="box2"> Latest picture of you <span><img src="public/imagini/pozatool.jpg" width=230 height=300 class="sp" alt="poza"><i class="fas fa-heart"></i>320 likes</span></div>
+            <p id="liked0"></p>
+            <p id="liked1"></p>
+            <div class="wrap">
+              <div class="search">
+                <input type="text" class="searchTerm" placeholder="Search for your friends">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+            </div>
+          <br>
+          </div>
+      <br>
+    </div>
+
+    <div class="column1">
+      <img src="public/imagini/dog-avatar.jpg" class="dogavatar1" height=100 width=100 alt="dogavatar">
+      <p class="nume">Buddy<i class="fas fa-user"></i></p>
+    
+      <img src="public/imagini/dogavatar2.jpg" class="dogavatar2" height=100 width=100 alt="dogavatar">
+      <p class="nume2">Oscar<i class="fas fa-user"></i></p>
+   
+      <img src="public/imagini/dogavatar3.jpg" class="dogavatar3" height=100 width=100 alt="dogavatar">
+      <p class="nume3">Max<i class="fas fa-user"></i></p>
+    
+      <img src="public/imagini/dogavatar3.jpg" class="dogavatar4" height=100 width=100 alt="dogavatar">
+      <div class="nume4"><p>Max<i class="fas fa-user"></i></p>
+      </div>
+    </div>
+
+    <div class="column1">
+      <div class="container1">
+        <img src="public/imagini/dog-family.jpg" class="dogfamily" height=350 alt="dogfam">
+          <button class="middlebutton" id="heart"> <i class="fas fa-heart fa-8x"></i>
+          </button>
+      </div>
+
+      <div class="container2">
+        <img src="public/imagini/dog-post.jpg" class="dogpost" height=350 alt="dogpost">
+          <button class="middlebutton2" id="heart"> <i class="fas fa-heart fa-8x"></i> 
+          </button>
+      </div>
+
+    <div class="container2">
+      <img src="public/imagini/dogpost2.png" class="dogpost" height=350 alt="dogpost">
+        <button class="middlebutton3" id="heart"> <i class="fas fa-heart fa-8x"></i>
+        </button>
+    </div>
+
+    <div class="container2">
+      <img src="public/imagini/dogpost3.jpg" class="dogpost" height=350 alt="dogpost">
+        <button class="middlebutton4" id="heart"><i class="fas fa-heart fa-8x"></i> 
+        </button>
+    </div>
+
+  <img src="public/imagini/dog-avatar.jpg" class="dogavatar5" height=100 width=100 alt="dogavatar">
+  <p class="nume10">Buddy<i class="fas fa-user"></i></p>
+  <div class="postaretext"> I love that my owner is home during this quarantine :) !!!! :) :)</div>
+  </div>
+
+  <div class="column2">
+    <div class="detalii"><i class="fas fa-bone fa-10x"></i></div>
+    <div class="detalii2"><i class="fas fa-bone fa-10x"></i></div>
+
+
+  <img src="public/imagini/dogavatar6.jpg" class="dogavatar6" height=100 width=100 alt="dogavatar">
+  <div class="audio">
+    <audio controls>
+      <source src="audio/song.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio> </div>
+    <p class="audiocom"> Look what a cool song I found lol</p>
+  </div>
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close">&times;</span> 
+      <p>BECOME A PREMIUM MEMBER NOW FOR ONLY 5.99$ A MONTH!</p>
+    </div>
+  <script src="js-index.js"></script>
+  </body>
+
+</html>
